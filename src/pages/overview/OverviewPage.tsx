@@ -1,7 +1,13 @@
-
+import MainBodyHeader from "../../components/shared/MainBodyHeader";
+import OverviewCard from "./OverviewCard";
 
 const OverviewPage = () => {
-  return <h1> Overview</h1>;
+  return (
+    <section className="px-4">
+      <MainBodyHeader textContent="overview" />
+      <OverviewCard />
+    </section>
+  );
 };
 
 export default OverviewPage;

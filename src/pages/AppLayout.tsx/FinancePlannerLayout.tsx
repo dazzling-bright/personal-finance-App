@@ -1,21 +1,16 @@
-import { Layout } from "antd";
 import { Outlet } from "react-router-dom";
-import Sidebar from "../../components/Sidebar";
-
-const { Sider, Content } = Layout;
+import Sidebar from "../../components/sidebar/Sidebar";
 
 const FinancePlannerLayout = () => {
   return (
-    <Layout className="h-screen">
-      <Sider width={200} className="max-w-[200px] min-w-[200px]">
+    <main className="h-screen grid grid-cols-[250px_auto]">
+      <aside className="w-[250px]">
         <Sidebar />
-      </Sider>
-      <Layout className="flex-1">
-        <Content className="p-4">
-          <Outlet />
-        </Content>
-      </Layout>
-    </Layout>
+      </aside>
+      <section className="w-full">
+        <Outlet />
+      </section>
+    </main>
   );
 };
 
