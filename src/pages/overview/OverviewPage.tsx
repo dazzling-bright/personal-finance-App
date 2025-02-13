@@ -4,7 +4,7 @@ import OverviewPots from "./component/OverviewPots";
 
 const OverviewPage = () => {
   return (
-    <section className="px-4">
+    <section className="px-4 flex-1">
       <MainBodyHeader textContent="overview" />
       <OverviewCard />
       <OverviewPots/>
