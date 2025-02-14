@@ -29,12 +29,15 @@ const SidebarNavLInks = () => {
 
   return (
     <ul
-      className={`flex flex-col ${isMinimized ? "items-center" : "items-start"}`}
+      className={`flex flex-col  ${isMinimized ? "items-center" : "items-start"}`}
     >
       {SideBarButtons.map(({ path, icon, text }, index: number) => {
         const activeTab: boolean = pathname === path;
         return (
-          <li key={index}>
+          <li
+            key={index}
+            className={`${isMinimized ? "min-w-auto" : "min-w-[200px]"}`}
+          >
             <Link
               to={path}
               className={` flex items-center gap-4 text-left px-4 py-3 ${

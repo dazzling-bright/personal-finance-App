@@ -13,6 +13,7 @@ body {
   --color-custom-beige: hsl(28, 73%, 81%);
   --color-custom-light-blue: hsl(190, 52%, 55%);
   --color-custom-grey: hsl(0, 0%, 30%);
+  --color-custom-light-grey: hsl(30, 36%, 96%);
 }
 
 /* @layer base {
