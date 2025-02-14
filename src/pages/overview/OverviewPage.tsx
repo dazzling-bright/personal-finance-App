@@ -1,6 +1,8 @@
 import MainBodyHeader from "../../components/shared/MainBodyHeader";
+import OverviewBudgets from "./component/OverviewBudgets";
 import OverviewCard from "./component/OverviewCard";
 import OverviewPots from "./component/OverviewPots";
+import OverviewRecurringBills from "./component/OverviewRecurringBills";
 import OverviewTransactions from "./component/OverviewTransactions";
 
 const OverviewPage = () => {
@@ -10,6 +12,8 @@ const OverviewPage = () => {
       <OverviewCard />
       <OverviewPots />
       <OverviewTransactions />
+      <OverviewBudgets />
+      <OverviewRecurringBills />
     </section>
   );
 };
